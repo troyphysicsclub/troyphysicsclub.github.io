@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar{
+    background-color: #910139;
+    color: white;
+    padding: 18px 150px;
+}
+
+.nav-container{
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-link{
+    text-decoration: none;
+    color: white;
+}
+
+.left-nav{
+    display: flex;
+}
+
+.logo{
+    height: 60px;
+}
+
+.troy{
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.banner-box{
+    font-family: "Inter", sans-serif;
+    margin-left: 25px;
+}
+
+.banner{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#physics-club{
+    font-size: 36px;
+}
+
+.contactarea{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact-line{
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.contact-line2{
+    font-family: "Roboto Slab", serif;
+    font-size: 17px;
+    display: none;
+}
+
+.fa-brands{
+    padding-right: 5px;
+}
+
+.container{
+    min-height: 83vh;
+    max-width: 1300px;
+    margin-right: 155px;
+    margin-left: 155px;
+}
+
+#body-content{
+    margin-bottom: 90px;
+}
+
+.header{
+    font-family: "Roboto Slab", serif;
+    font-size: 36px;
+    font-weight: 700;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+
+.event-boxes{
+    border-left: 1px #910139 solid;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+}
+
+.topcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.event-name{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.event-info{
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    padding-top: 3px;
+}
+
+.countdown{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.datecontainer{
+    text-align: end;
+}
+
+.event-description{
+    font-size: 16px;
+    line-height: 153%;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+}
+
+#tutor-box{
+    margin-bottom: 130px;
+}
+
+.rsvp{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.rsvp-link{
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.rsvp-link:hover{
+    background-color: rgb(231, 231, 231);
+    border-radius: 5px;
+}
+
+.footer{
+    background-color: #333333;
+    font-family: "Roboto Slab", serif;
+}
+
+.footer-content{
+    font-size: 12px;
+    color: #DADADA;
+    gap: 350px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-left: 155px;
+    margin-right: 155px;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;
+}
+
+.email{
+    color: white;
+    text-decoration: none;
+}
+
+.email:hover{
+    text-decoration: underline;
+}
+
+.date-small{
+    display: none;
+}
+
+.date{
+    display:block;
+}
+
+@media only screen and (max-width: 680px){
+
+    body{
+        background-color: rgb(255, 255, 255);
+    }
+
+    .navbar{
+        padding-left: 20px;
+    }
+
+    .logo{
+        height: 95px;
+        display: flex;
+        justify-content: center;    
+    }
+
+    .contactarea{
+        display: none;
+    }
+
+    .contactarea2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-line2{
+        display: flex;
+        margin-top: 14px;
+    }
+
+    .container{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .event-boxes{
+        margin-bottom: 45px;
+        margin-right: 5px;
+    }
+
+    .event-name{
+        font-size: 30px;
+    }
+
+    .event-info{
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .event-description{
+        font-size: 20px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .countdown{
+        padding-top: 5px;
+        font-size: 22px;
+    }
+
+    .rsvp{
+        font-size: 20px;
+    }
+
+    .header{
+        margin-bottom: 30px;
+        padding-top: 25px;
+    }
+
+    .topcontainer{
+        flex-direction: column;
+    }
+    
+    .footer-content{
+        margin-left: 30px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        gap: 100px;
+    }
+
+    .date-small{
+        display: block;
+    }
+
+    .date{
+        display:none;
+    }
+
+    .countdown{
+        display:none;  
+    }
+   
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troy Physics Club</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Inter, Roboto, Roboto Slab Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/3576df4f68.js" crossorigin="anonymous"></script>
+<body>
+    <div class="navbar">
+        <div class="nav-container">
+            <div class="left-nav">
+                <div class="logo">
+                    <img class="troy" src="TroyTrojans.png">
+                </div>
+                <div class="banner-box">
+                    <div class="banner">Troy University</div>
+                    <div id="physics-club" class="banner">Physics Club</div>
+                </div>
+            </div>
+            <div class="contactarea">
+                <div class="contact-line">For questions contact mbouldo@troy.edu </div>
+                <div class="icon-bar">
+                    <a class="icon-link" href="https://www.instagram.com/troyphysics">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.troy.edu/academics/colleges-schools/college-arts-sciences/departments/school-science-technology/chemistry-physics/physics/index.html">
+                        <i class="fa-solid fa-display" style="color: #ffffff;"></i>
+                    </a> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contactarea2">
+        <div class="contact-line2">For questions contact mbouldo@troy.edu</div>
+    </div>
+
+    <div class="container">
+        <div class="header">Upcoming Events</div>
+        <div id="body-content"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div>&copy 2024 Troy Physics Club</div>
+            <a class="email" href="mailto: evieandersondev@gmail.com">Site Created by Evie Anderson</div>
+        </div>
+    </footer>
+</body>
+<script src="moment.js"></script>
+<script>
+    function createEvent(title,location,date,eventDescription){
+      
+
+        var formatedDate = moment(date).format('llll')
+
+        var formatedDate_smallScreen = moment(date).format('lll')
+
+        var inNDays = moment(date).fromNow();
+
+        if(moment(date).isAfter(moment())){
+            document.getElementById("body-content").innerHTML += `
+            <div class="event-boxes">
+                <div class="topcontainer">
+                    <div class="nametype-parent">
+                        <div class="event-name">${title}</div>
+                        <div class="event-info ">
+                            Meeting in ${location}
+                            <div class="event-info date-small">${formatedDate_smallScreen}</div>    
+                        </div>
+                    </div>
+                    <div class="datecontainer">
+                        <div class="countdown">${inNDays}</div>
+                        <div class="event-info date">${formatedDate}</div>
+                    
+                    </div>
+                </div>
+                <div class="event-description">${eventDescription}</div>
+                <div class="rsvp"><a href="https://google.com" class="rsvp-link">Click here to RSVP</a></div>
+            </div>
+            `
+        }
+
+    }
+
+    createEvent('Regulary Scheduled Club Meeting','MSCX 112','2024-01-31 18:00:00','The Physics Club will be holding its regular meeting to discuss current physics-related topics and engage in collaborative learning. All members are encouraged to participate in the discussion.')
+    createEvent('Movie Night','MSCX 112','2024-01-31 18:00:00','Join us for a movie night featuring "The Theory of Everything." Grab some popcorn, settle in, and enjoy this captivating film that explores the life of renowned physicist Stephen Hawking. We\'ll provide refreshments to enhance the cinematic experience.')
+    createEvent('Regulary Scheduled Club Meeting','MSCX 112','2024-01-31 18:00:00','Join us for a movie night featuring "The Theory of Everything." Grab some popcorn, settle in, and enjoy this captivating film that explores the life of renowned physicist Stephen Hawking. We\'ll provide refreshments to enhance the cinematic experience')
+    createEvent('5$ Tutoring Night: Midterms','MSCX 112','2024-02-04 18:00:00','Join us for a movie night featuring "The Theory of Everything." Grab some popcorn, settle in, and enjoy this captivating film that explores the life of renowned physicist Stephen Hawking. We\'ll provide refreshments to enhance the cinematic experience')   
+
+
+</script>
