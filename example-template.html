@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Blog:</h1>
+    <div id="posts">
+
+    </div>
+    <button onclick="fn()"></button>
+
+</body>
+<script src="config.js"></script>
+<script>
+    for (let index = 0; index < 5; index++) {
+        console.log(index);
+    }
+
+    console.log('hey')
+
+    function fn(){
+        for (let index = 3; index < 12; index*=2) {
+            console.log('hey' + index + '!');
+        }
+    }
+
+
+    function pc(){
+        let arr = ['Green','blue', 'white'];
+        for(let index = 0; index < arr.length; index++ ){
+            console.log('hey ' + arr[index])
+        }
+    }
+
+    function pcn(array){
+        for (let i = 0; i < array.length; i++) {
+            const element = array[i];
+            console.log(element);
+        }
+    }
+
+    pcn(['a','c']);
+
+
+    function lkm(a,b,c){
+        for (let index = 0; index < b.length; index++) {
+            let outCount = a*10;
+            console.log(`${outCount} ${c}: ${b[index]}!!`);
+        }
+    }
+
+    lkm(59,['toyota','cars','ford'],109);
+
+   
+
+    var string = 'string';
+    var numba = 45;
+    var bool = false;
+    var alphabet = ['a','b','c','d','e'];
+
+    var obj = {
+        name: 'Martin',
+        age: 22,
+        isCool: true,
+    }
+
+
+    var arr = [12,'12','cars',123,obj];
+  
+    console.log(arr[4].age)
+
+    var car_1 = {
+        make: 'Toyota',
+        model: 'Rav4',
+        year: 2019,
+        isInProduction: false,
+        colors: ['blue','purple','silver','gray','orange','black','white']
+    }
+
+    var car_2 = {
+        make: 'BMW',
+        model: 'X4',
+        year: 2023,
+        isInProduction: true,
+        colors: ['red','white']
+    }
+
+    var car_3 = {
+        make: 'Jeep',
+        model: 'Wrangler',
+        year: 2023,
+        isInProduction: true,
+        colors: ['silver','white']
+    }
+
+    var cars = [car_1,car_2,car_3];
+    let secondCarModel = car_2['model']
+    let secondCarModelFromArry = cars[1].model
+
+
+    for (let outerIndex = 0; outerIndex < cars.length; outerIndex++) {
+        let selectedCar = cars[outerIndex];
+        console.log(selectedCar)
+
+        for (let index = 0; index < selectedCar.colors.length; index++) {
+            const element = selectedCar.colors[index];
+            console.log(element)
+        }
+    }
+
+
+ 
+    let numGroup = [[1,3,5],[2,4,6],[100,200,300]]
+
+    for (let index = 0; index < numGroup.length; index++) {
+        const numGroupSubArray = numGroup[index];
+        console.log(numGroupSubArray)
+
+        for (let index2 = 0; index2 < numGroupSubArray.length; index2++) {
+            const element = numGroupSubArray[index2];
+            console.log(element)
+        }
+    }
+
+
+    var posts = [
+        {
+            title: 'Regulary Scheduled Club Meeting',
+            room: 'MSCX 112',
+            date: '2024-01-01',
+            eventDescription: 'ABC',
+            body: 'Text...'
+        },
+        {
+            title: 'I love Evie',
+            body: "Text..123.123"
+        }
+    ]
+
+    function createPost(title,body){
+        document.getElementById("posts").innerHTML +=`<h3>${title}</h3><p>${body}</p>`
+    }
+
+
+
+    for (let index = 0; index < posts.length; index++) {
+        const post = posts[index];   
+        createPost(post.title,post.body)
+    }
+
+</script>
+</html>
