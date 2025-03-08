@@ -178,8 +178,7 @@ main{
     gap: 350px;
     padding-top: 12px;
     padding-bottom: 12px;
-    margin-left: 155px;
-    margin-right: 155px;
+    margin:auto;
     max-width: 1300px;
     display: flex;
     flex-direction: row;
